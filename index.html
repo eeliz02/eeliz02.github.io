@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Servicios en Aplicaciones Web</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" />
+</head>
+<body>
+  <header>
+    <h1>Servicios en Aplicaciones Web</h1>
+  </header>
+
+  <!-- Mapa interactivo -->
+  <section id="mapa">
+    <h2>Mapa Interactivo</h2>
+    <div id="map"></div>
+  </section>
+
+  <!-- Estado del clima -->
+  <section id="clima">
+    <h2>Estado del Clima</h2>
+    <form id="clima-form">
+      <label for="ciudad">Ingresa tu ciudad:</label>
+      <input type="text" id="ciudad" placeholder="Ejemplo: Madrid" required>
+      <button type="submit">Consultar Clima</button>
+    </form>
+    <div id="resultado-clima"></div>
+  </section>
+
+  <!-- Contador de visitas -->
+  <section id="contador">
+    <h2>Contador de Visitas</h2>
+    <p>Visitas en esta página: <span id="visitas">0</span></p>
+  </section>
+
+  <!-- Formulario dinámico -->
+  <section id="formulario">
+    <h2>Formulario Dinámico</h2>
+    <form id="formulario-contacto">
+      <label for="nombre">Nombre:</label>
+      <input type="text" id="nombre" required>
+      <label for="mensaje">Mensaje:</label>
+      <textarea id="mensaje" required></textarea>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="respuesta-servidor"></div>
+  </section>
+
+  <!-- Elementos multimedia -->
+  <section id="multimedia">
+    <h2>Descargar Gráficos</h2>
+    <a href="https://via.placeholder.com/800x600" download="grafico.jpg">Descargar Imagen</a>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
